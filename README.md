@@ -13,14 +13,32 @@ git clone https://github.com/hashicorp/terraform.git
 cd terraform
 ```
 
-2. `Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea`
+2. `Полный хеш и комментарий коммита, хеш которого начинается на aefea`
 ```
 git show aefea --format="%H %s"
 ```
-![1](https://github.com/Foxbeerxxx/tools_git/blob/main/img/img1.png)`
+![1](https://github.com/Foxbeerxxx/tools_git/blob/main/img/1.png)`
 
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
+3. `Какому тегу соответствует коммит 85024d3?`
+```
+git tag --contains 85024d3
+
+этот коммит присутствует в нескольких тегах
+```
+![2](https://github.com/Foxbeerxxx/tools_git/blob/main/img/2.png)`
+
+4. `Сколько родителей у коммита b8d720? Напишите их хеши.`
+```
+git show --pretty=%P b8d720
+
+есть 2 родителя, это их хеши:
+56cd7859e05c36c06b56d013b55a252d0bb7e158 и 9ea88f22fc6269854151c571162c5bcf958bee2b
+
+```
+![3](https://github.com/Foxbeerxxx/tools_git/blob/main/img/3.png)`
+
+
+
 5. `Заполните здесь этапы выполнения, если требуется ....`
 6. 
 
